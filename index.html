@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mio 義式小館 - 智慧雲端點餐系統</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Lora:wght@400;700&family=Noto+Sans+TC:wght@300;400;700&family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <section class="hero" style="padding: 3rem 5% 2rem;">
+      <h1>Mio 智慧雲端點餐系統</h1>
+      <p style="margin-bottom: 1.5rem;">打造輕量化、零接觸、高效率的餐飲新標竿。透過雲端即時同步技術，實現顧客自助、櫃台管理與廚房看板的無縫協作。</p>
+      
+      <div class="hero-actions" style="margin-top: 2rem; display: flex; justify-content: center; gap: 1.5rem;">
+        <a href="https://mio-order-system.web.app/?table=7" class="nav-btn client" target="_blank" style="margin: 0; padding: 1rem 2rem; font-size: 1.1rem;">進入點餐測試 (第7桌)</a>
+        <a href="https://mio-order-system.web.app/login" class="nav-btn admin" target="_blank" style="margin: 0; padding: 1rem 2rem; font-size: 1.1rem;">管理後台</a>
+      </div>
+    </section>
+
+    <section class="section-container">
+      <div class="grid">
+        <!-- Customer Section -->
+        <div class="card">
+          <h3><span>📱</span> 顧客自助端</h3>
+          <ul>
+            <li><strong>掃碼即看</strong>：無需下載 App，掃描 QR Code 即可開啟精美圖文菜單。</li>
+            <li><strong>客製化升級</strong>：支援單選/多選加料，以及自動化的「套餐加價」邏輯。</li>
+            <li><strong>透明化價格</strong>：購物車即時結算，清楚顯示折扣明細。</li>
+            <li><strong>雲端送單</strong>：一鍵下單，資料庫即時通知櫃台人員接單。</li>
+          </ul>
+        </div>
+
+        <!-- Counter Section -->
+        <div class="card">
+          <h3><span>🖥️</span> 櫃台控單系統</h3>
+          <ul>
+            <li><strong>實時訂單監聽</strong>：伴隨「叮咚」音效，新單進來第一時間掌握。</li>
+            <li><strong>彈性訂單修正</strong>：支援現場手動調整數量、補點或退點，金額動態重算。</li>
+            <li><strong>智慧折扣邏輯</strong>：自動過濾套餐飲品價差，優先套用最優折扣。</li>
+            <li><strong>收款狀態管理</strong>：確認收款後結案，並將訂單推播至廚房看板。</li>
+          </ul>
+        </div>
+
+        <!-- Kitchen Section -->
+        <div class="card">
+          <h3><span>👨‍🍳</span> 廚房出餐看板 (KDS)</h3>
+          <ul>
+            <li><strong>分類分區備餐</strong>：餐點依義大利麵、燉飯、炸物等類別自動排序。</li>
+            <li><strong>單品進度追蹤</strong>：每道菜可單獨點擊「完成」，掌握一桌餐點的缺漏。</li>
+            <li><strong>自動化結案</strong>：當該桌最後一個品項完成時，系統自動標記全單完成。</li>
+            <li><strong>高辨識介面</strong>：針對廚房環境設計的高對比色塊，降低出餐錯誤率。</li>
+          </ul>
+        </div>
+
+        <!-- Admin Section -->
+        <div class="card">
+          <h3><span>⚙️</span> 全端管理後台</h3>
+          <ul>
+            <li><strong>菜單營運中心</strong>：隨時上傳照片、修改價格、設定餐點售罄。</li>
+            <li><strong>全球參數設定</strong>：動態調整套餐金額、飲品折抵上限，全店即時生效。</li>
+            <li><strong>權限安全防護</strong>：嚴格的 Firestore 安全規則，確保營運數據不外洩。</li>
+            <li><strong>輕量雲架構</strong>：基於 Firebase 技術，無需維護伺服器。</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="workflow">
+        <h2>核心服務流程</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">01</div>
+            <h4>掃碼入座</h4>
+            <p>顧客掃描桌號 QR Code 自動導向點餐頁</p>
+          </div>
+          <div class="step">
+            <div class="step-number">02</div>
+            <h4>下單付款</h4>
+            <p>提交訂單後至櫃台結帳，系統即時重算金額</p>
+          </div>
+          <div class="step">
+            <div class="step-number">03</div>
+            <h4>廚房製作</h4>
+            <p>結帳後廚房端 KDS 顯示分組清單開始製作</p>
+          </div>
+          <div class="step">
+            <div class="step-number">04</div>
+            <h4>美味出餐</h4>
+            <p>逐項完成品項，系統自動結案並出餐</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Studio0808 智造實驗室. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
